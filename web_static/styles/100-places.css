@@ -20,6 +20,7 @@
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 
 .places article h2 {
@@ -53,9 +54,10 @@ div.information {
   height: 80px;
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 50px;
+  padding: 10px;
 }
 
 div.max_guest,
@@ -63,7 +65,7 @@ div.number_rooms,
 div.number_bathrooms {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  width: 100px;
 }
 
 div.max_guest p,
@@ -95,7 +97,49 @@ div.user {
   justify-content: flex-start;
 }
 
-div.user p,
-div.description p {
+div.user p {
   margin-bottom: auto;
 }
+
+.places div.amenities,
+.places div.reviews {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-left: 0px;
+}
+
+.places div.amenities h2,
+.places div.reviews h2 {
+  font-size: 16px;
+  justify-content: left;
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.places div.amenities ul,
+.places div.reviews ul {list-style-type: none;padding-left: unset;}
+
+.icon_tv,
+.icon_wifi,
+.icon_pets {
+  width: auto;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.icon_tv {content: url('../images/icon_tv.png');}
+.icon_wifi {content: url(../images/icon_wifi.png);}
+.icon_pets {content: url(../images/icon_pets.png);}
+
+.places div.amenities ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 10px 0px;
+}
+
+.places div.reviews ul li h3 {font-size: 14px;}
+
+.places div.reviews ul li p {font-size: 12px;}
+
